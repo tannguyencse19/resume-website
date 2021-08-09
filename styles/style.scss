@@ -1,3 +1,27 @@
-.abc {
-    
+.wrap {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+}
+
+.grid-box {
+    background-color: rgba(0,0,0,0.05);
+}
+
+#introduction {
+  border: 1px solid red;
+  width: 267px;
+  height: 821px;
+  > h2 {
+    background-image: url("../img/avatar_hat.jpg");
+    background-repeat: no-repeat;
+  }
+}
+
+#experience {
+    border: 1px solid green;
+}
+
+#education {
+    border: 1px solid blue;
 }

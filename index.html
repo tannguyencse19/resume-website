@@ -7,66 +7,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nguyen Ngoc Tan - Frontend Developer</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <header>
-        <ul id="hamburger-menu">
-            <li>Home</li>
-            <li>About Me</li>
-            <li>Contact Me</li>
-            <li>Projects</li>
-            <li>Education</li>
-            <li>Skills</li>
-        </ul>
+    <div class="wrap">
+        <section class="grid-box first" id="introduction">
+            <!-- img -->
+            <h2>Jane Doe</h2>
+            <ul id="info">
+                <!-- icons -->
+                <li><i class="fa fa-briefcase">Designer</i></li>
+                <li><i class="fa fa-home">London, UK</i></li>
+                <li><i class="fa fa-envelope">ex@mail.com</i></li>
+                <li><i class="fa fa-phone">1224435534</i></li>
+            </ul>
+            <ul id="skills">
+                <h2><i class="fa fa-asterisk">Skills</i></h2>
+                <li>Adobe Photoshop</li>
+                <li>Photography</li>
+                <li>Illustrator</li>
+                <li>Media</li>
+            </ul>
+            <ul id="languages">
+                <h2><i class="fa fa-globe">Languages</i></h2>
+                <li>English</li>
+                <li>Spanish</li>
+                <li>German</li>
+            </ul>
+        </section>
 
-        <!-- for desktop <ul id="navbar"></ul> -->
-    </header>
+        <section class="grid-box second" id="experience">
+            <h2><i class="fa fa-suitcase">Work Experience</i></h2>
+            <ul>
+                <li>
+                    <h3>Front End Develoh3er / w3schools.com</p>
+                        <p><i class="fa fa-calendar">Jan 2015 - Current</i></p>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                </li>
+                <li>
+                    <h3>Web Develoh3er / something.com</h3>
+                    <p><i class="fa fa-calendar">Mar 2012 - Dec 2014</i></p>
+                    <p>Lorem ipsum dolor sit amet. Lorem, ipsum dolor.</p>
+                </li>
+                <li>
+                    <h3>Grah3hic Designer / designsomething.com</h3>
+                    <p><i class="fa fa-calendar">Jun 2010 - Mar 2012</i></p>
+                    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</p>
+                </li>
+            </ul>
+        </section>
 
-    <!-- for desktop <section id="sidebar"></section> -->
+        <section class="grid-box third"></section>
 
-    <section id="landing">
-        <!-- cta: contact me -->
-        <div id="about-me">
-            <h1>Nguyen Ngoc Tan</h1>
-            <h2>Frontend Developer</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, in.</p>
-        </div>
-        <div class="btn">
-            <button>Contact Me!</button>
-            <button></button> <!-- Keo xuong -->
-        </div>
-    </section>
-
-    <section id="contact-me">
-        <div id="contact-info">
-            <!-- icon -->
-            Address
-            Number
-            Mail
-            Linkedin
-            Github
-            Blog
-        </div>
-        <div id="contact-form">
-
-        </div>
-    </section>
-
-    <section id="projects">
-
-    </section>
-
-    <section id="education">
-
-    </section>
-
-    <section id="skills">
-        <!-- programming language, technologies (framework...), non-tech skills (language) -->
-    </section>
+        <section class="grid-box fourth" id="education">
+            <h2><i class="fa fa-certificate">Education</i></h2>
+            <ul>
+                <li>
+                    <h3>W3Schools.com</h3>
+                    <p><i class="fa fa-calendar">Forever</i></p>
+                    <p>Web Development! All I need to know in one place</p>
+                </li>
+                <li>
+                    <h3>London Business School</h3>
+                    <p><i class="fa fa-calendar">2013 - 2015</i></p>
+                    <p>Master Degree</p>
+                </li>
+                <li>
+                    <h3>School of Coding</h3>
+                    <p><i class="fa fa-calendar">2010 - 2013</i></p>
+                    <p>Bachelor Degree</p>
+                </li>
+            </ul>
+        </section>
+    </div>
 
     <footer>
-
+        <p>Find me on social media.</p>
+        <ul>
+            <!-- icons -->
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-snapchat"></i>
+            <i class="fa fa-pinterest"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+        </ul>
+        <p>Powered by w3.css</p>
     </footer>
 </body>
 
