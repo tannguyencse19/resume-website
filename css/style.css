@@ -16,18 +16,27 @@ body {
 
 .fa {
   color: #009688;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
-#text {
-  color: black;
+.container {
+  padding: 0 10px;
+}
+
+hr {
+  border-top: 1px #eee;
+}
+
+h2,
+h3 {
+  color: #757575;
 }
 
 #grid-body {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[2];
-      grid-template-columns: repeat(2, auto);
+  -ms-grid-columns: 30% 70%;
+      grid-template-columns: 30% 70%;
   -ms-grid-rows: (auto)[2];
       grid-template-rows: repeat(2, auto);
   margin-top: 20px;
@@ -35,13 +44,14 @@ body {
 }
 
 #grid-body .grid-box {
+  background-color: white;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 #grid-body .item-1 {
-  -ms-grid-row-span: 3;
-      grid-row-end: span 3;
+  -ms-grid-row-span: 2;
+      grid-row-end: span 2;
 }
 
 #grid-body .item-1 {
@@ -56,17 +66,45 @@ body {
   border: 1px solid blue;
 }
 
-.container {
-  padding: 0 10px;
+#introduction {
+  color: #757575;
 }
 
 #introduction #avatar-name {
   position: relative;
 }
 
+#introduction #avatar-name img {
+  max-width: 100%;
+  height: auto;
+}
+
 #introduction #avatar-name h1 {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+#introduction .slide-wrap {
+  background-color: #f1f1f1;
+  border-radius: 30px;
+}
+
+#introduction .slide {
+  color: white;
+  background-color: #009688;
+  text-align: center;
+  border-radius: 30px;
+}
+
+#experience h3 + p {
+  color: #009688;
+}
+
+#experience h3 + p span {
+  background-color: #009688;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=style.css.map */

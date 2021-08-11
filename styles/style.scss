@@ -1,3 +1,4 @@
+// style chung
 * {
   // margin: 0;
   padding: 0;
@@ -20,26 +21,36 @@ body {
 
 .fa {
   color: #009688;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
-#text {
-  color: black;
+.container {
+  padding: 0 10px;
 }
 
+hr {
+  border-top: 1px #eee;
+}
+
+h2,
+h3 {
+  color: rgb(117, 117, 117);
+}
+
+// style rieng
 #grid-body {
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: 30% 70%;
   grid-template-rows: repeat(2, auto);
   margin-top: 20px;
   gap: 10px 10px;
   .grid-box {
-    // background-color: rgba(0, 0, 0, 0.05);
+    background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
 
   .item-1 {
-    grid-row-end: span 3;
+    grid-row-end: span 2;
   }
 
   .item-1 {
@@ -55,17 +66,42 @@ body {
   }
 }
 
-.container {
-  padding: 0 10px;
-}
-
 #introduction {
+  color: #757575;
   #avatar-name {
     position: relative;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
     h1 {
       position: absolute;
       bottom: 0;
       left: 0;
+    }
+  }
+
+  .slide-wrap {
+    background-color: #f1f1f1;
+    border-radius: 30px;
+  }
+
+  .slide {
+    color: white;
+    background-color: #009688;
+    text-align: center;
+    border-radius: 30px;
+  }
+}
+
+#experience {
+  h3 + p {
+    color: #009688;
+    span {
+      background-color: #009688;
+      color: white;
+      padding: 5px;
+      border-radius: 5px;
     }
   }
 }
