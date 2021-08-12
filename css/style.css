@@ -68,18 +68,6 @@ b {
       grid-row-end: span 2;
 }
 
-#grid-body .item-1 {
-  border: 1px solid red;
-}
-
-#grid-body .item-2 {
-  border: 1px solid green;
-}
-
-#grid-body .item-3 {
-  border: 1px solid blue;
-}
-
 #introduction #avatar-name {
   position: relative;
 }
