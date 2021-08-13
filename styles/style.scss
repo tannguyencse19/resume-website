@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+
+// set up ban dau
+* {
+  // margin: 0; // toggle de cac tag tu dong gian cach
+  padding: 0;
+  // border: 0;
+  // font-size: 100%;
+  font-family: "Roboto", sans-serif;
+  vertical-align: baseline;
+  list-style-type: none;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+
+// style rieng
+body {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 40% 60%;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
