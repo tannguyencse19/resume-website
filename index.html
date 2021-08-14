@@ -8,42 +8,112 @@
     <title>Nguyen Ngoc Tan - Frontend Developer</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="./script.js" defer></script>
 </head>
 
 <body>
-    <!-- <div class="portrait-img"><img src="https://bslthemes.site/myour/light/wp-content/uploads/2020/09/person_03.jpg"
-            alt="potrait"></div> -->
     <div class="portrait-img"></div>
+    <header>
+        <a href="#">
+            <img src="https://bslthemes.site/myour/light/wp-content/uploads/2020/09/logo.png" alt="logo">
+            <span>
+                Joé
+                <br>
+                Wilson
+            </span>
+        </a>
+
+        <!-- for desktop -->
+        <ul id="navbar">
+            <li><a href="#">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+            <li>
+                <a href="#download-cv">
+                    Download CV
+                    <i class="fas fa-download"></i>
+                </a>
+            </li>
+        </ul>
+
+        <!-- <ul id="hamburger-menu">
+            <li>Home</li>
+            <li>About Me</li>
+            <li>Contact Me</li>
+            <li>Projects</li>
+            <li>Education</li>
+            <li>Skills</li>
+        </ul> -->
+    </header>
+
     <!-- wrapper -->
-    <div class="container">
-        <header>
-            <!-- <ul id="hamburger-menu">
-                <li>Home</li>
-                <li>About Me</li>
-                <li>Contact Me</li>
-                <li>Projects</li>
-                <li>Education</li>
-                <li>Skills</li>
-            </ul> -->
-
-            <!-- for desktop <ul id="navbar"></ul> -->
-        </header>
-
-        <!-- for desktop <section id="sidebar"></section> -->
-
-        <section id="landing">
+    <div>
+        <section class="container"  id="landing">
             <!-- cta: contact me -->
-            <div id="about-me">
-                <h1>Joé Wilson</h1>
-                <h2>Frontend Developer</h2>
+            <div>
+                <h1>Joé<br>Wilson</h1>
+                <div style="width: max-content;">
+                    <h2 id="typeWriter">Frontend Developer</h2>
+                </div>
                 <p>Hello! I am Web Developer from United States, New York. I have rich experience in web site design and
                     building, also I am good at wordpress. I love to talk with you about our unique.</p>
-                <a href="#" id="contact-me">
+                <a href="#contacts">
                     <span>Contact Me</span>
-                    <span><em>C</em><em>o</em><em>n</em><em>t</em><em>a</em><em>c</em><em>t</em><em> </em><em>M</em><em>e</em></span>
                     <i class="fas fa-chevron-right"></i>
                 </a>
+                <a href="#projects">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
             </div>
+        </section>
+
+        <section class="container"  id="projects">
+            <h2>Projects</h2>
+            <h3>My latest works</h3>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="https://bslthemes.site/myour/light/wp-content/uploads/2020/06/work8-680x680.jpg"
+                            alt="">
+                        <p>Content Card Type</p>
+                        <p>Yellow and Blue Striped</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="https://bslthemes.site/myour/light/wp-content/uploads/2020/06/work7-680x680.jpg"
+                            alt="">
+                        <p>Image Card Type</p>
+                        <p>White Rose Photo</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="https://bslthemes.site/myour/light/wp-content/uploads/2020/06/work5-680x680.jpg"
+                            alt="">
+                        <p>Gallery Card Type</p>
+                        <p>Brown Short Dog</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="https://bslthemes.site/myour/light/wp-content/uploads/2020/06/work2-680x680.jpg"
+                            alt="">
+                        <p>Video Card Type</p>
+                        <p>Brown Short Dog</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="education">
+
+        </section>
+
+        <section id="skills">
+            <!-- programming language, technologies (framework...), non-tech skills (language) -->
         </section>
 
         <section id="contact-me">
@@ -60,26 +130,17 @@
             </div>
         </section>
 
-        <section id="projects">
-
-        </section>
-
-        <section id="education">
-
-        </section>
-
-        <section id="skills">
-            <!-- programming language, technologies (framework...), non-tech skills (language) -->
-        </section>
-
         <footer>
 
         </footer>
     </div>
+
     <div id="sidebar">
-        <p><i class="fab fa-facebook"></i></p>
-        <p><i class="fab fa-instagram"></i></p>
-        <p><i class="fab fa-dribbble"></i></p>
+        <ul>
+            <li><i class="fab fa-facebook-f"></i></li>
+            <li><i class="fab fa-instagram"></i></li>
+            <li><i class="fab fa-dribbble"></i></li>
+        </ul>
     </div>
 </body>
 

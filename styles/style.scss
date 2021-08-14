@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 // set up ban dau
 * {
@@ -10,6 +10,7 @@
   vertical-align: baseline;
   list-style-type: none;
   text-decoration: none;
+  color: black;
 }
 
 html {
@@ -21,54 +22,159 @@ body {
   margin: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 400;
-}
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   font-weight: 400;
+// }
 
 // style chung
 .container {
-  margin: 20px;
+  border-right: 1px solid #e0e1e2;
+  border-bottom: 1px solid #e0e1e2;
+  padding-left: 50px;
+  padding-bottom: 50px;
 }
 
 // style rieng
 body {
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: 40% 55% 5%;
+  margin-top: 200px;
+  margin-left: 45%;
+  margin-right: 80px;
 
   .portrait-img {
     background-image: url(https://bslthemes.site/myour/light/wp-content/uploads/2020/09/person_03.jpg);
-    width: 100%;
-    height: 100%;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 45%; // dat = voi margin left o tren
+    height: 100%;
+    display: block;
+  }
+}
+
+header {
+  width: 90%;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  padding: 20px 0 20px 40px;
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+  display: grid;
+  grid-auto-flow: column;
+
+  img {
+    margin-right: 30px;
+  }
+
+  span {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+
+  #navbar {
+    display: grid;
+    grid-auto-flow: column;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+
+    a[href="#download-cv"] {
+      color: #00bf9f;
+      border: 1px solid #00bf9f;
+      padding: 20px 40px;
+      border-radius: 30px;
+
+      i {
+        margin-left: 10px;
+        color: #00bf9f;
+      }
+    }
   }
 }
 
 #landing {
-  padding-left: 30px;
   padding-right: 200px;
 
-  #contact-me {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 20px 40px;
-    border-radius: 50px;
-    text-transform: uppercase;
-    border: 1px solid #e0e1e2;
-    color: #262728;
+  h1 {
+    font-size: 60px;
   }
 
-  #contact-me:hover {
+  h2 {
+    color: #00bf9f;
+    font-size: 20px;
+    text-transform: uppercase;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 3px solid #00bf9f; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    // animation shorthand: cu go dai thuoc tinh vao cung chay
+    animation: typing-delay 3s steps(30, end) infinite alternate,
+      blink-cursor 1s step-end infinite; // co 2 animation
+  }
+
+  /* The typing-delay effect */
+  @keyframes typing-delay {
+    0% {
+      width: 0;
+    }
+    50% {
+      // delay
+      width: 100%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blink-cursor {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #00bf9f;
+    }
+  }
+
+  a[href="#contacts"] {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 20px 40px;
+    border-radius: 50px;
+    border: 1px solid #e0e1e2;
+
+    span {
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-right: 10px;
+    }
+  }
+
+  a[href="#projects"] {
+    width: 60px;
+    line-height: 60px; // chinh height = text line-height
+    text-align: center;
+    display: inline-block; // de chinh width = 60px, inline = nam tren dong
+    border-radius: 50%;
+    border: 1px solid #e0e1e2;
+  }
+
+  a[href="#contacts"]:hover,
+  a[href="#projects"]:hover {
     border: 1px solid #00bf9f;
-    transition: 1s all cubic-bezier(.165,.85,.45,1) 0s;
-    animation: ;
+    transition: all 0.4s ease-in-out;
   }
 }
 
@@ -76,4 +182,37 @@ body {
   position: fixed;
   bottom: 20px;
   right: 20px;
+
+  li {
+    // style giong button chevorn down
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border: 1px solid #e0e1e2;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+}
+
+#projects {
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    color: #00bf9f;
+    text-transform: uppercase;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px 20px;
+
+    img {
+      width: 250px;
+      height: 250px;
+    }
+  }
 }
