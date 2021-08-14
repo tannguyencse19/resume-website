@@ -7,3 +7,7 @@ setInterval(() => {
     typeWriter.innerHTML = typeWriterArr[text];
 }, 6000);
 
+$('#popup-container').magnificPopup({
+    delegate: 'a', // child items selector, by clicking on it popup will open
+    type: 'inline',
+});

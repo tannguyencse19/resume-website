@@ -15,21 +15,20 @@
 
 html {
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   min-height: 100%;
   margin: 0;
+  padding: 0;
 }
 
-// h1,
-// h2,
-// h3,
-// h4,
-// h5,
-// h6 {
-//   font-weight: 400;
-// }
+h1,
+h2 {
+  margin: 0;
+}
 
 // style chung
 .container {
@@ -37,13 +36,36 @@ body {
   border-bottom: 1px solid #e0e1e2;
   padding-left: 50px;
   padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+// magnific-popup
+.white-popup {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto;
 }
 
 // style rieng
 body {
-  margin-top: 200px;
   margin-left: 45%;
   margin-right: 80px;
+
+  #content-wrapper {
+    &::before {
+      content: "";
+      position: fixed;
+      left: 45%; // 2 thong so nay dat = margin-left, right o tren
+      right: 80px;
+      top: 0;
+      height: 50px; // thong so nay dat = fixed top cua navbar
+      // background: #fff;
+      border-right: 1px solid #e0e1e2;
+    }
+  }
 
   .portrait-img {
     background-image: url(https://bslthemes.site/myour/light/wp-content/uploads/2020/09/person_03.jpg);
@@ -104,6 +126,7 @@ header {
 }
 
 #landing {
+  padding-top: 150px;
   padding-right: 200px;
 
   h1 {

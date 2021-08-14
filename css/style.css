@@ -10,10 +10,18 @@
 
 html {
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
   margin: 0;
 }
 
@@ -22,12 +30,31 @@ body {
   border-bottom: 1px solid #e0e1e2;
   padding-left: 50px;
   padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.white-popup {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto;
 }
 
 body {
-  margin-top: 200px;
   margin-left: 45%;
   margin-right: 80px;
+}
+
+body #content-wrapper::before {
+  content: "";
+  position: fixed;
+  left: 45%;
+  right: 80px;
+  top: 0;
+  height: 50px;
+  border-right: 1px solid #e0e1e2;
 }
 
 body .portrait-img {
@@ -91,6 +118,7 @@ header #navbar a[href="#download-cv"] i {
 }
 
 #landing {
+  padding-top: 150px;
   padding-right: 200px;
   /* The typing-delay effect */
   /* The typewriter cursor effect */

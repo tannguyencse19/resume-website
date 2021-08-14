@@ -8,12 +8,21 @@
     <title>Nguyen Ngoc Tan - Frontend Developer</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="./node_modules/magnific-popup/dist/magnific-popup.css">
+    <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" defer></script>
+    <!-- Magnific Popup core JS file -->
+    <script src="./node_modules/magnific-popup/dist/jquery.magnific-popup.js" defer></script>
+
+    <!-- De sau cung de load cac file tren truoc -->
     <script src="./script.js" defer></script>
 </head>
 
 <body>
     <div class="portrait-img"></div>
-    <header>
+    <!-- <header>
         <a href="#">
             <img src="https://bslthemes.site/myour/light/wp-content/uploads/2020/09/logo.png" alt="logo">
             <span>
@@ -23,7 +32,7 @@
             </span>
         </a>
 
-        <!-- for desktop -->
+         for desktop
         <ul id="navbar">
             <li><a href="#">About Me</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -38,19 +47,19 @@
             </li>
         </ul>
 
-        <!-- <ul id="hamburger-menu">
+        <ul id="hamburger-menu">
             <li>Home</li>
             <li>About Me</li>
             <li>Contact Me</li>
             <li>Projects</li>
             <li>Education</li>
             <li>Skills</li>
-        </ul> -->
-    </header>
+        </ul>
+    </header> -->
 
     <!-- wrapper -->
-    <div>
-        <section class="container"  id="landing">
+    <div id="content-wrapper">
+        <section class="container" id="landing">
             <!-- cta: contact me -->
             <div>
                 <h1>Joé<br>Wilson</h1>
@@ -69,20 +78,20 @@
             </div>
         </section>
 
-        <section class="container"  id="projects">
+        <section class="container" id="projects">
             <h2>Projects</h2>
             <h3>My latest works</h3>
-            <ul>
+            <ul id="popup-container">
                 <li>
-                    <a href="#">
+                    <a href="#popup-content-img">
                         <img src="https://bslthemes.site/myour/light/wp-content/uploads/2020/06/work8-680x680.jpg"
                             alt="">
-                        <p>Content Card Type</p>
+                        <p>Content and Image Card Type</p>
                         <p>Yellow and Blue Striped</p>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#popup-img">
                         <img src="https://bslthemes.site/myour/light/wp-content/uploads/2020/06/work7-680x680.jpg"
                             alt="">
                         <p>Image Card Type</p>
@@ -90,7 +99,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#popup-gallery">
                         <img src="https://bslthemes.site/myour/light/wp-content/uploads/2020/06/work5-680x680.jpg"
                             alt="">
                         <p>Gallery Card Type</p>
@@ -98,7 +107,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#popup-video">
                         <img src="https://bslthemes.site/myour/light/wp-content/uploads/2020/06/work2-680x680.jpg"
                             alt="">
                         <p>Video Card Type</p>
@@ -141,6 +150,15 @@
             <li><i class="fab fa-instagram"></i></li>
             <li><i class="fab fa-dribbble"></i></li>
         </ul>
+    </div>
+
+    <!-- project content -->
+    <div>
+        <div id="popup-content-img" class="white-popup mfp-hide">
+            <img src="./img/1.jpg" alt="">
+            <h2>Popup content</h2>
+            <p>Some text here..</p>
+        </div>
     </div>
 </body>
 

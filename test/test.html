@@ -7,15 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
     <link rel="stylesheet" href="./test.css">
-    <script src="./test.js"></script>
+
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="./node_modules/magnific-popup/dist/magnific-popup.css">
+    <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" defer></script>
+    <!-- Magnific Popup core JS file -->
+    <script src="./node_modules/magnific-popup/dist/jquery.magnific-popup.js" defer></script>
+
+    <script src="./test.js" defer></script>
 </head>
 
 <body>
     <h1>Hello!</h1>
-    <div class="wrapper">
-        <div class="typing-demo">
-            This is a typing demo.
-        </div>
+    <div id="popup-img" class="white-popup mfp-hide">
+        <img src="./img/1.jpg" alt="">
+        <h2>Popup content</h2>
+        <p>Some text here..</p>
+    </div>
+    <div class="parent-container">
+        <!-- <a href="#popup-img" data-mfp-src="./img/1.jpg">Open popup 1</a> -->
+        <a href="#popup-img">Open popup 1</a>
+        <a href="path-to-image-2.jpg">Open popup 2</a>
+        <a href="path-to-image-3.jpg">Open popup 3</a>
+    </div>
+
+    <a href="#test-popup" class="btn open-popup-link">Show inline popup</a>
+
+    <div id="test-popup" class="white-popup mfp-hide">
+        <h2>Popup content</h2>
+        <p>Some text here..</p>
     </div>
 </body>
 
