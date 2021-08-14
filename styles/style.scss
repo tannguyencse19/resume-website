@@ -34,19 +34,51 @@ h2 {
 .container {
   border-right: 1px solid #e0e1e2;
   border-bottom: 1px solid #e0e1e2;
-  padding-left: 50px;
-  padding-bottom: 50px;
-  padding-top: 50px;
+  padding: 50px;
 }
 
-// magnific-popup
+.btn-similar-contact {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding: 20px 40px;
+  border-radius: 50px;
+  border: 1px solid #e0e1e2;
+
+  span {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-right: 10px;
+  }
+
+  &:hover {
+    border: 1px solid #00bf9f;
+    transition: all 0.4s ease-in-out;
+  }
+}
+
+// // magnific-popup
 .white-popup {
   position: relative;
   background: #fff;
-  padding: 20px;
+  // padding: 20px;
   width: auto;
   max-width: 500px;
   margin: 20px auto;
+
+  img { // Moi image
+    width: 100%;
+    height: auto;
+  }
+}
+
+.popup-content-img-style {
+  .category {
+    color: #00bf9f;
+  }
+  p {
+    color: #585858;
+  }
 }
 
 // style rieng
@@ -170,20 +202,25 @@ header {
     }
   }
 
-  a[href="#contacts"] {
-    display: inline-block;
-    margin-top: 20px;
-    margin-right: 20px;
-    padding: 20px 40px;
-    border-radius: 50px;
-    border: 1px solid #e0e1e2;
+  // a[href="#contacts"] {
+  //   display: inline-block;
+  //   margin-top: 20px;
+  //   margin-right: 20px;
+  //   padding: 20px 40px;
+  //   border-radius: 50px;
+  //   border: 1px solid #e0e1e2;
 
-    span {
-      text-transform: uppercase;
-      font-weight: 700;
-      margin-right: 10px;
-    }
-  }
+  //   span {
+  //     text-transform: uppercase;
+  //     font-weight: 700;
+  //     margin-right: 10px;
+  //   }
+
+  //   &:hover {
+  //     border: 1px solid #00bf9f;
+  //     transition: all 0.4s ease-in-out;
+  //   }
+  // }
 
   a[href="#projects"] {
     width: 60px;
@@ -192,12 +229,11 @@ header {
     display: inline-block; // de chinh width = 60px, inline = nam tren dong
     border-radius: 50%;
     border: 1px solid #e0e1e2;
-  }
 
-  a[href="#contacts"]:hover,
-  a[href="#projects"]:hover {
-    border: 1px solid #00bf9f;
-    transition: all 0.4s ease-in-out;
+    &:hover {
+      border: 1px solid #00bf9f;
+      transition: all 0.4s ease-in-out;
+    }
   }
 }
 
@@ -236,6 +272,22 @@ header {
     img {
       width: 250px;
       height: 250px;
+    }
+
+    li {
+      text-align: center;
+      p {
+        font-weight: 700;
+        color: #00bf9f;
+        text-transform: uppercase;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      p + p {
+        color: black;
+        font-size: 20px;
+      }
     }
   }
 }
