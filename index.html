@@ -60,11 +60,11 @@
     <!-- wrapper -->
     <div id="content-wrapper">
         <section class="container" id="landing">
-            <!-- cta: contact me -->
             <div>
-                <h1>Joé<br>Wilson</h1>
+                <h1 class="section-name">Joé<br>Wilson</h1>
                 <div style="width: max-content;">
-                    <h2 id="typeWriter">Frontend Developer</h2>
+                    <!-- typeWriter wrapper -->
+                    <h2 class="section-subtitle" id="typeWriter">Frontend Developer</h2>
                 </div>
                 <p>Hello! I am Web Developer from United States, New York. I have rich experience in web site design and
                     building, also I am good at wordpress. I love to talk with you about our unique.</p>
@@ -72,15 +72,15 @@
                     <span>Contact Me</span>
                     <i class="fas fa-chevron-right"></i>
                 </a>
-                <a href="#projects">
+                <a href="#projects" class="btn-circle">
                     <i class="fas fa-chevron-down"></i>
                 </a>
             </div>
         </section>
 
-        <section class="container" id="projects">
-            <h2>Projects</h2>
-            <h3>My latest works</h3>
+        <section class="container" id="projects"> <!-- id dung de scroll -->
+            <h2 class="section-name">Projects</h2>
+            <h3 class="section-subtitle">My latest works</h3>
             <ul id="popup-container">
                 <li>
                     <a href="#popup-content-img">
@@ -117,8 +117,30 @@
             </ul>
         </section>
 
-        <section id="education">
-
+        <section class="container" id="education">
+            <h2 class="section-name">Education</h2>
+            <h3 class="section-subtitle">Studied At</h3>
+            <div class="btn-scroll-horizontal">
+                <button class="btn-circle"><i class="fas fa-chevron-left"></i></button>
+                <button class="btn-circle"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <ul>
+                <li style="position: relative;">
+                    <div class="date">2011-2012</div>
+                    <h4 class="name">Art University <br> New York</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, quasi.</p>
+                </li>
+                <li style="position: relative;">
+                    <div class="date">2009-2010</div>
+                    <h4>Programming Course <br> Paris</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                </li>
+                <li style="position: relative;">
+                    <div class="date">2008-2009</div>
+                    <h4>Web Design <br> Course London</h4>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </li>
+            </ul>
         </section>
 
         <section id="skills">

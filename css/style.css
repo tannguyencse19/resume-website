@@ -12,6 +12,7 @@ html {
   height: 100%;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -50,6 +51,30 @@ h2 {
   border: 1px solid #00bf9f;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+}
+
+.btn-circle {
+  width: 60px;
+  line-height: 60px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid #e0e1e2;
+}
+
+.btn-circle:hover {
+  border: 1px solid #00bf9f;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.section-name {
+  font-size: 60px;
+}
+
+.section-subtitle {
+  color: #00bf9f;
+  text-transform: uppercase;
 }
 
 .white-popup {
@@ -155,14 +180,7 @@ header #navbar a[href="#download-cv"] i {
   /* The typewriter cursor effect */
 }
 
-#landing h1 {
-  font-size: 60px;
-}
-
-#landing h2 {
-  color: #00bf9f;
-  font-size: 20px;
-  text-transform: uppercase;
+#landing #typeWriter {
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
   border-right: 3px solid #00bf9f;
@@ -217,21 +235,6 @@ header #navbar a[href="#download-cv"] i {
   }
 }
 
-#landing a[href="#projects"] {
-  width: 60px;
-  line-height: 60px;
-  text-align: center;
-  display: inline-block;
-  border-radius: 50%;
-  border: 1px solid #e0e1e2;
-}
-
-#landing a[href="#projects"]:hover {
-  border: 1px solid #00bf9f;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
-
 #sidebar {
   position: fixed;
   bottom: 20px;
@@ -247,22 +250,11 @@ header #navbar a[href="#download-cv"] i {
   margin-bottom: 20px;
 }
 
-#projects h2 {
-  font-size: 40px;
-}
-
-#projects h3 {
-  color: #00bf9f;
-  text-transform: uppercase;
-}
-
 #projects ul {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (auto)[2];
       grid-template-columns: repeat(2, auto);
-  -ms-grid-rows: (auto)[2];
-      grid-template-rows: repeat(2, auto);
   gap: 20px 20px;
 }
 
@@ -287,5 +279,46 @@ header #navbar a[href="#download-cv"] i {
 #projects ul li p + p {
   color: black;
   font-size: 20px;
+}
+
+#education {
+  position: relative;
+}
+
+#education .btn-scroll-horizontal {
+  position: absolute;
+  top: 55px;
+  right: 30px;
+}
+
+#education .btn-scroll-horizontal .btn-circle {
+  background-color: white;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#education ul {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+}
+
+#education li .date {
+  color: #00bf9f;
+  position: absolute;
+  left: -8px;
+  top: -22px;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+#education li .name {
+  margin-left: 30px;
+  margin-bottom: 10px;
 }
 /*# sourceMappingURL=style.css.map */
