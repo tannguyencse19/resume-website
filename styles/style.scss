@@ -287,11 +287,9 @@ header {
   }
 
   li {
-    .date {
+    .education-date {
       color: #00bf9f;
       position: absolute;
-      left: -8px;
-      top: -22px;
       display: inline-block;
       font-size: 11px;
       font-weight: 700;
@@ -299,9 +297,24 @@ header {
       transform: rotate(90deg);
     }
 
-    .name {
+    .education-name {
       margin-left: 30px;
       margin-bottom: 10px;
+    }
+  }
+}
+
+#skills {
+  .logo-wrapper {
+    overflow: hidden;
+    margin-top: 50px;
+    .logo-container {
+      width: 875px;
+      img {
+        width: 100px;
+        height: auto;
+        margin-right: 30px;
+      }
     }
   }
 }

@@ -303,11 +303,9 @@ header #navbar a[href="#download-cv"] i {
   grid-auto-flow: column;
 }
 
-#education li .date {
+#education li .education-date {
   color: #00bf9f;
   position: absolute;
-  left: -8px;
-  top: -22px;
   display: inline-block;
   font-size: 11px;
   font-weight: 700;
@@ -317,8 +315,23 @@ header #navbar a[href="#download-cv"] i {
           transform: rotate(90deg);
 }
 
-#education li .name {
+#education li .education-name {
   margin-left: 30px;
   margin-bottom: 10px;
+}
+
+#skills .logo-wrapper {
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+#skills .logo-wrapper .logo-container {
+  width: 875px;
+}
+
+#skills .logo-wrapper .logo-container img {
+  width: 100px;
+  height: auto;
+  margin-right: 30px;
 }
 /*# sourceMappingURL=style.css.map */
