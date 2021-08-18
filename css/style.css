@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
 * {
   padding: 0;
   font-family: "Roboto", sans-serif;
@@ -43,7 +43,7 @@ h2 {
 
 .btn-similar-contact span {
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 900;
   margin-right: 10px;
 }
 
@@ -147,7 +147,7 @@ header img {
 
 header span {
   display: inline-block;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 18px;
   letter-spacing: 1px;
 }
@@ -158,7 +158,7 @@ header #navbar {
   grid-auto-flow: column;
   text-transform: uppercase;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 header #navbar a[href="#download-cv"] {
@@ -268,7 +268,7 @@ header #navbar a[href="#download-cv"] i {
 }
 
 #projects ul li p {
-  font-weight: 700;
+  font-weight: 900;
   color: #00bf9f;
   text-transform: uppercase;
   width: 200px;
@@ -308,7 +308,7 @@ header #navbar a[href="#download-cv"] i {
   position: absolute;
   display: inline-block;
   font-size: 11px;
-  font-weight: 700;
+  font-weight: 900;
   -webkit-transform-origin: bottom left;
           transform-origin: bottom left;
   -webkit-transform: rotate(90deg);
@@ -333,5 +333,48 @@ header #navbar a[href="#download-cv"] i {
   width: 100px;
   height: auto;
   margin-right: 30px;
+}
+
+#contact .contact-grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50%;
+      grid-template-columns: 50%;
+}
+
+#contact .contact-form .form-field {
+  position: relative;
+  margin-bottom: 40px;
+  display: -ms-grid;
+  display: grid;
+}
+
+#contact .contact-form .form-field label {
+  position: absolute;
+  top: -5px;
+  left: 35px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 900;
+  background-color: #fff;
+}
+
+#contact .contact-form .form-field label .label-asterisk {
+  color: #00bf9f;
+}
+
+#contact .contact-form .form-field input,
+#contact .contact-form .form-field textarea {
+  padding: 0px 20px;
+  height: 60px;
+  border: 1px solid #e0e1e2;
+  border-radius: 30px;
+  outline: none;
+}
+
+#contact .contact-form .form-field textarea {
+  resize: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */

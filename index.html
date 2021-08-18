@@ -69,6 +69,7 @@
                 <p>Hello! I am Web Developer from United States, New York. I have rich experience in web site design and
                     building, also I am good at wordpress. I love to talk with you about our unique.</p>
                 <a href="#contacts" class="btn-similar-contact">
+                    <!-- Chua co animation -->
                     <span>Contact Me</span>
                     <i class="fas fa-chevron-right"></i>
                 </a>
@@ -145,7 +146,6 @@
         </section>
 
         <section class="container" id="skills">
-            <!-- programming language, technologies (framework...), non-tech skills (language) -->
             <h2 class="section-name">Language and Technologies</h2>
             <h3 class="section-subtitle">Developing On</h3>
             <div class="logo-wrapper">
@@ -166,7 +166,30 @@
             </div>
         </section>
 
-        <section id="contact-me">
+        <section class="container" id="contact">
+            <h2 class="section-name">Contact</h2>
+            <h3 class="section-subtitle">Let's Talk</h3>
+            <div class="contact-grid-container">
+                <form class="contact-form" method="POST">
+                    <div class="form-field">
+                        <label for="full-name">Full Name <span class="label-asterisk">*</span></label>
+                        <input type="text" name="full-name" id="full-name" placeholder="ej.: Genoveva Lian Hullt">
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Email <span class="label-asterisk">*</span></label>
+                        <input type="email" name="email" id="email" placeholder="example@domain.com">
+                    </div>
+                    <div class="form-field">
+                        <label for="messages">Messages <span class="label-asterisk">*</span></label>
+                        <textarea name="messages" id="messages" cols="20" rows="10"></textarea>
+                    </div>
+                    <!-- Button co animation giong contact me -->
+                </form>
+
+                <div class="contact-info">
+
+                </div>
+            </div>
             <!-- <div id="contact-info">
                 Address
                 Number
@@ -175,9 +198,6 @@
                 Github
                 Blog
             </div> -->
-            <div id="contact-form">
-
-            </div>
         </section>
 
         <footer>
