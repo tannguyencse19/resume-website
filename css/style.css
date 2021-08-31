@@ -12,7 +12,6 @@ html {
   height: 100%;
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -30,6 +29,18 @@ h2 {
   border-right: 1px solid #e0e1e2;
   border-bottom: 1px solid #e0e1e2;
   padding: 50px;
+  position: relative;
+}
+
+.btn-scroll-horizontal {
+  position: absolute;
+  top: 55px;
+  right: 30px;
+}
+
+.btn-scroll-horizontal .btn-customize {
+  background-color: white;
+  margin-right: 10px;
 }
 
 .btn-similar-contact {
@@ -60,6 +71,7 @@ h2 {
   display: inline-block;
   border-radius: 50%;
   border: 1px solid #e0e1e2;
+  cursor: pointer;
 }
 
 .btn-circle:hover {
@@ -285,18 +297,6 @@ header #navbar a[href="#download-cv"] i {
   position: relative;
 }
 
-#education .btn-scroll-horizontal {
-  position: absolute;
-  top: 55px;
-  right: 30px;
-}
-
-#education .btn-scroll-horizontal .btn-circle {
-  background-color: white;
-  margin-right: 10px;
-  cursor: pointer;
-}
-
 #education ul {
   display: -ms-grid;
   display: grid;
@@ -321,12 +321,33 @@ header #navbar a[href="#download-cv"] i {
 }
 
 #skills .logo-wrapper {
-  overflow: hidden;
   margin-top: 50px;
 }
 
 #skills .logo-wrapper .logo-container {
-  width: 875px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  will-change: transform;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+
+#skills .logo-wrapper .logo-container.grab-active {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#skills .logo-wrapper .logo-container.btn-active {
+  scroll-behavior: smooth;
 }
 
 #skills .logo-wrapper .logo-container img {

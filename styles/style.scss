@@ -17,7 +17,6 @@ html {
   height: 100%;
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -36,6 +35,18 @@ h2 {
   border-right: 1px solid #e0e1e2;
   border-bottom: 1px solid #e0e1e2;
   padding: 50px;
+  position: relative;
+}
+
+.btn-scroll-horizontal {
+  position: absolute;
+  top: 55px;
+  right: 30px;
+
+  .btn-customize {
+    background-color: white;
+    margin-right: 10px;
+  }
 }
 
 .btn-similar-contact {
@@ -65,6 +76,7 @@ h2 {
   display: inline-block; // de chinh width = 60px, inline = nam tren dong
   border-radius: 50%;
   border: 1px solid #e0e1e2;
+  cursor: pointer;
 
   &:hover {
     border: 1px solid #00bf9f;
@@ -269,18 +281,6 @@ header {
 #education {
   position: relative;
 
-  .btn-scroll-horizontal {
-    position: absolute;
-    top: 55px;
-    right: 30px;
-
-    .btn-circle {
-      background-color: white;
-      margin-right: 10px;
-      cursor: pointer;
-    }
-  }
-
   ul {
     display: grid;
     grid-auto-flow: column;
@@ -306,10 +306,23 @@ header {
 
 #skills {
   .logo-wrapper {
-    overflow: hidden;
     margin-top: 50px;
     .logo-container {
-      width: 875px;
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      transition: all 0.2s;
+      will-change: transform;
+      user-select: none;
+      cursor: pointer;
+      &.grab-active {
+        cursor: grabbing;
+        transform: scale(1.05);
+      }
+      &.btn-active {
+        scroll-behavior: smooth;
+      }
       img {
         width: 100px;
         height: auto;
